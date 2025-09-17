@@ -47,10 +47,20 @@ text-shadow: none;
 }
 #game-table {
 /* border removed as requested */
+border: 2px solid var(--table-color);
 text-align: center;
+height: 200px;
 width: 400px;
+display: flex;
+justify-content: center;
+margin-top: 30px;
 }
 table caption {
+align-items: center;
+text-transform: uppercase;
+background-color: var(--table-color);
+color: white;
+padding: 10px;
 color: white;
 text-transform: uppercase;
 background-color: var(--table-color);
@@ -92,7 +102,7 @@ Best-Selling Video Games
 </tr>
 </table>
 <p>
-Source: https://en.wikipedia.org/wiki/List_of_best-selling_video_games
+Source: <a href = "https://en.wikipedia.org/wiki/List_of_best-selling_video_games" > Wikipedia </a>
 </p>
 </body>
 </html>
