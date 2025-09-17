@@ -69,28 +69,28 @@
             --row-bg-color: honeydew;
         }
 
-        #game-table {
-            /* border removed as requested */
-            border: 2px solid var(--table-color);
-            text-align: center;
-            height: 200px;
-            width: 400px;
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-        }
+        /* ID Selector */
+#game-table {
+    border: 2px solid var(--table-color);
+    text-align: center;
+    height: 200px;
+    width: 400px;
+}
 
-        table caption {
-            align-items: center;
-            text-transform: uppercase;
-            background-color: var(--table-color);
-            color: white;
-            padding: 10px;
-            color: white;
-            text-transform: uppercase;
-            background-color: var(--table-color);
-            padding: 10px;
-        }
+/* Class Selector */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Descendant Selector */
+table caption {
+    text-transform: uppercase;
+    background-color: var(--table-color);
+    color: white;
+    padding: 10px;
+}
 
         tr:nth-child(even) {
             background-color: var(--row-bg-color);
@@ -129,6 +129,7 @@
             </tr>
         </table>
         <p>
-            Source: <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games"> Wikipedia </a>
+            Source: <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games" target="_blank">
+                Wikipedia </a>
         </p>
     </body>
