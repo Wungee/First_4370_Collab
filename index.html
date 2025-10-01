@@ -2,144 +2,145 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Spooktacular — CSS Storybook</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Work+Sans:wght@300;400;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="spooktacular.css">
-  <meta name="description"
-    content="A CSS-only animated Halloween storybook — 100% HTML & CSS interactivity, :target pages, :checked menu, and accessible focus states.">
-  <style>
-    :root {
-      color-scheme: dark;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Spooktacular — CSS Storybook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Work+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="spooktacular.css">
+    <meta name="description"
+        content="A CSS-only animated Halloween storybook — 100% HTML & CSS interactivity, :target pages, :checked menu, and accessible focus states.">
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+    </style>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <div class="logo" aria-hidden="false">
-        <a href="#page-1"><img src="pumpkin.png" alt="Spooktacular logo - pumpkin" /></a>
-      </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <div class="logo" aria-hidden="false">
+                <a href="#page-1"><img src="assets/images/pumpkin.png" alt="Spooktacular logo - pumpkin" /></a>
+            </div>
 
-      <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-label="Toggle navigation">
-      <label for="menu-toggle" class="menu-button" aria-hidden="true">☰</label>
+            <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-label="Toggle navigation">
+            <label for="menu-toggle" class="menu-button" aria-hidden="true">☰</label>
 
-      <nav class="site-nav" role="navigation" aria-label="Primary">
-        <a class="nav-link" href="#page-1">Graveyard</a>
-        <a class="nav-link" href="#page-2">Haunted Library</a>
-        <a class="nav-link" href="#page-3">Escape</a>
-        <a class="nav-link" href="#credits">Credits</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main" class="site-main">
-    <!-- Page 1 -->
-    <section id="page-1" class="page default" aria-labelledby="p1-title">
-      <div class="hero">
-        <h1 id="p1-title" class="hero-title">Midnight in the Graveyard</h1>
-        <img src="haunted_library.png"/>
-        <p class="lead">
-          Four friends wandered through the graveyard, lanterns flickering in the midnight fog.  
-          Drawn by whispers, they found the haunted library, its doors creaking open on their own.
-        </p>
-        <div class="hero-decor">
-          <span class="moon" aria-hidden="true"></span>
-          <span class="stars" aria-hidden="true"></span>
+            <nav class="site-nav" role="navigation" aria-label="Primary">
+                <a class="nav-link" href="#page-1">Graveyard</a>
+                <a class="nav-link" href="#page-2">Haunted Library</a>
+                <a class="nav-link" href="#page-3">Escape</a>
+                <a class="nav-link" href="#credits">Credits</a>
+            </nav>
         </div>
-      </div>
+    </header>
 
-      <div class="content-grid">
-        <!--start-->
-<article class="card human1-card" tabindex="0">
-    <img src="anna.jpeg"/>
-    <h3>Anna</h3>
-    <p>The brave leader, determined to uncover the library’s secrets.</p>
-  </article>
+    <main id="main" class="site-main">
+        <!-- Page 1 -->
+        <section id="page-1" class="page default" aria-labelledby="p1-title">
+            <div class="hero">
+                <h1 id="p1-title" class="hero-title">Midnight in the Graveyard</h1>
+                <p class="lead">Four friends wandered through the graveyard, lanterns flickering in the midnight fog.
+                    Drawn by whispers, they found a library sealed by shadows.</p>
+                <div class="hero-decor">
+                    <span class="moon" aria-hidden="true"></span>
+                    <span class="stars" aria-hidden="true"></span>
+                    <img src="assets/images/fog.png" alt="drifting fog" class="hero-fog" aria-hidden="true" />
+                </div>
 
-  <article class="card human2-card" tabindex="0">
-    <img src="marcus.jpeg"/>
-    <h3>Marcus</h3>
-    <p>Skeptical, yet unwilling to be left behind in the dark.</p>
-  </article>
+                <!-- decorative elements intentionally removed per request -->
+            </div>
 
-  <article class="card human3-card" tabindex="0">
-    <img src="lena.jpeg"/>
-    <h3>Lena</h3>
-    <p>Curious, her lantern light caught dust swirling like spirits.</p>
-  </article>
+            <div class="content-grid">
+                <!--start-->
+                <article class="card human1-card" tabindex="0">
+                    <img src="assets/images/anna.jpg" />
+                    <h3>Anna</h3>
+                    <p>The brave leader, determined to uncover the library’s secrets.</p>
+                </article>
 
-  <article class="card human4-card" tabindex="0">
-    <img src="james.jpeg"/>
-    <h3>James</h3>
-    <p>Uneasy, he swore he heard growling behind the cracked doors.</p>
-  </article>
+                <article class="card human2-card" tabindex="0">
+                    <img src="assets/images/marcus.jpg" />
+                    <h3>Marcus</h3>
+                    <p>Skeptical, yet unwilling to be left behind in the dark.</p>
+                </article>
 
-        <div class="navigation-cta">
-          <a class="pager" href="#page-2">Next Chapter &raquo;</a>
-        </div>
-      </div>
-    </section>
+                <article class="card human3-card" tabindex="0">
+                    <img src="assets/images/lena.jpg" />
+                    <h3>Lena</h3>
+                    <p>Curious, her lantern light caught dust swirling like spirits.</p>
+                </article>
 
-    <!-- Page 2 -->
-    <section id="page-2" class="page" aria-labelledby="p2-title">
-      <h2 id="p2-title">Haunted Library</h2>
-      <div class="library-panels">
-        <aside class="panel ghost-panel" tabindex="0">
-          <h4>The Ghost Librarian</h4>
-          <img src="library_ghost.webp"/>
-          <p>Chains rattled as the spectral keeper appeared, hurling books across the aisles.</p>
-        </aside>
+                <article class="card human4-card" tabindex="0">
+                    <img src="assets/images/james.jpg" />
+                    <h3>James</h3>
+                    <p>Uneasy, he swore he heard growling behind the cracked doors.</p>
+                </article>
 
-        <article class="panel witch-panel" tabindex="0">
-          <h4>The Witch</h4>
-          <img src="witch.png"/>
-          <p>By candlelight she muttered curses, her shadow dancing against the shelves.</p>
-        </article>
+                <div class="navigation-cta">
+                    <a class="pager" href="#page-2">Next Chapter &raquo;</a>
+                </div>
+            </div>
+        </section>
 
-        <article class="panel vampire-panel" tabindex="0">
-          <h4>The Vampire</h4>
-          <img src="vampire.jpeg"/>
-          <p>From the balcony, glowing eyes gleamed, fangs bared in the dim lantern light.</p>
-        </article>
+        <!-- Page 2 -->
+        <section id="page-2" class="page" aria-labelledby="p2-title">
+            <h2 id="p2-title">Haunted Library</h2>
+            <div class="library-panels">
+                <aside class="panel ghost-panel" tabindex="0">
+                    <h4>The Ghost Librarian</h4>
+                    <img src="assets/images/library_ghost.webp" />
+                    <p>Chains rattled as the spectral keeper appeared, hurling books across the aisles.</p>
+                </aside>
 
-        <article class="panel werewolf-panel" tabindex="0">
-          <h4>The Werewolf</h4>
-          <img src="werewolf.png"/>
-          <p>It lunged from the darkness, claws scraping stone as the humans fled deeper inside.</p>
-        </article>
-      </div>
+                <article class="panel witch-panel" tabindex="0">
+                    <h4>The Witch</h4>
+                    <img src="assets/images/witch.png" />
+                    <p>By candlelight she muttered curses, her shadow dancing against the shelves.</p>
+                </article>
 
-      <div class="navigation-cta">
-        <a class="pager" href="#page-3">Next Chapter &raquo;</a>
-      </div>
-    </section>
+                <article class="panel vampire-panel" tabindex="0">
+                    <h4>The Vampire</h4>
+                    <img src="assets/images/vampire.jpeg" />
+                    <p>From the balcony, glowing eyes gleamed, fangs bared in the dim lantern light.</p>
+                </article>
 
-    <!-- Page 3 -->
-    <section id="page-3" class="page" aria-labelledby="p3-title">
-      <h2 id="p3-title">Escape into the Fog</h2>
-      <div class="ending-scene">
-        <p>The four friends burst from the library doors, the night swallowing their screams.  
-        Behind them, the monsters faded back into the shadows, as the library sealed itself once more.</p>
-      </div>
+                <article class="panel werewolf-panel" tabindex="0">
+                    <h4>The Werewolf</h4>
+                    <img src="assets/images/werewolf.png" />
+                    <p>It lunged from the darkness, claws scraping stone as the humans fled deeper inside.</p>
+                </article>
+            </div>
 
-      <div class="navigation-cta">
-        <a class="pager" href="#page-1">&laquo; Back to Start</a>
-      </div>
-    </section>
-  </main>
+            <div class="navigation-cta">
+                <a class="pager" href="#page-3">Next Chapter &raquo;</a>
+            </div>
+        </section>
 
-  <footer id="credits" class="site-footer" role="contentinfo">
-    <div class="credits">Made with chills and thrills. &copy; 2025</div>
-    <p class="catchy">"Enter, if you dare, the CSS spooktacular."</p>
-  </footer>
+        <!-- Page 3 -->
+        <section id="page-3" class="page" aria-labelledby="p3-title">
+            <h2 id="p3-title">Escape into the Fog</h2>
+            <div class="ending-scene">
+                <p>The four friends burst from the library doors, the night swallowing their screams.
+                    Behind them, the monsters faded back into the shadows, as the library sealed itself once more.</p>
+            </div>
+
+            <div class="navigation-cta">
+                <a class="pager" href="#page-1">&laquo; Back to Start</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="credits" class="site-footer" role="contentinfo">
+        <div class="credits">Made with chills and thrills. &copy; 2025</div>
+        <p class="catchy">"Enter, if you dare, the CSS spooktacular."</p>
+    </footer>
 
 </body>
+
 </html>
