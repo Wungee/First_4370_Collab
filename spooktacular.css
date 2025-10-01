@@ -467,6 +467,7 @@ body {
         opacity: 0.9;
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     #strike:target~.welcome-hero::after {
         animation: none !important;
@@ -503,6 +504,8 @@ body.play-strike .strike-overlay::after {
     opacity: 1
 }
 =======
+=======
+>>>>>>> Stashed changes
 }
 .bookshelf-panel {
     position: relative;
@@ -550,5 +553,9 @@ body.play-strike .strike-overlay::after {
   .shelf-toggle:checked ~ .monster-behind {
     opacity: 1;
   }
+<<<<<<< Updated upstream
+  
+>>>>>>> Stashed changes
+=======
   
 >>>>>>> Stashed changes
