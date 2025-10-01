@@ -2,67 +2,48 @@
 <html lang="en">
 
 <head>
-    <title>Spooktacular Halloween Storybook</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Welcome — Spooktacular</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=UnifrakturCook&family=Creepster&family=Eater&family=Work+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="spooktacular.css">
+    <meta name="description" content="Welcome page for Spooktacular — click 'I dare' to begin the storybook.">
 </head>
 
 <body>
-    <header>
+    <header class="demo-header">
         <div class="logo" aria-label="Spooktacular Logo">
-            <img src="assets/images/pumpkin.png" alt="Pumpkin Logo" />
+            <img src="assets/images/ghost.png" alt="Pumpkin Logo" />
         </div>
-        <nav aria-label="Site Navigation">
-            <a href="#page-1" class="nav-link">Graveyard</a>
-            <a href="#page-2" class="nav-link">Haunted Library</a>
-            <a href="#page-3" class="nav-link">Pumpkin Patch</a>
-        </nav>
     </header>
-    <main>
-        <section id="page-1" class="page">
-            <h2>Midnight in the Graveyard</h2>
-            <div class="hero">
-                <img src="assets/images/bat.png" alt="Bat" />
-                <img src="assets/images/fog.png" alt="Fog" />
-            </div>
-            <div class="characters">
-                <div class="ghost character">
-                    <img src="assets/images/ghost.png" alt="Ghost" />
-                    <span class="ghost-title">Ghost</span>
-                </div>
-                <div class="vampire character">
-                    <span class="vampire-face">&#x1F9DB;</span>
-                    <span class="vampire-title">Vampire</span>
-                </div>
-            </div>
-            <a class="pager" href="#page-2">Next Chapter &raquo;</a>
-        </section>
-        <section id="page-2" class="page">
-            <h2>Haunted Library</h2>
-            <div class="hero">
-                <img src="assets/images/witch.png" alt="Witch" />
-            </div>
-            <div class="characters">
-                <div class="werewolf character">
-                    <span class="werewolf-face">&#x1F43A;</span>
-                    <span class="werewolf-title">Werewolf</span>
-                </div>
-            </div>
-            <a class="pager" href="#page-3">Next Chapter &raquo;</a>
-        </section>
-        <section id="page-3" class="page">
-            <h2>Pumpkin Patch Finale</h2>
-            <div class="hero">
-                <img src="assets/images/pumpkin.png" alt="Pumpkin" />
-            </div>
-            <div class="characters">
-                <!-- Room for future characters or cards -->
-            </div>
-            <a class="pager" href="#page-1">&laquo; Back to Start</a>
-        </section>
+
+    <!-- anchor that triggers lightning -->
+    <div id="strike" aria-hidden="true"></div>
+
+    <main class="welcome-hero" role="main">
+        <div class="welcome-inner">
+            <h1 class="welcome-title">Welcome to Halloween</h1>
+            <p class="welcome-sub">A night of whispers, glows, and gentle frights.</p>
+            <a class="dare-button" href="strike.html" role="button">I dare</a>
+            <a class="enter-button" href="index.html">Enter the Story</a>
+        </div>
+
+        <div class="welcome-decor" aria-hidden="true">
+            <img class="bat" src="assets/images/bat.png" alt="bat silhouette" />
+            <img class="fog" src="assets/images/fog.png" alt="drifting fog" />
+        </div>
+
+        <!-- strike overlay and flying shadows (these are inside welcome-hero so z-index works predictably) -->
+        <div class="strike-overlay" aria-hidden="true"></div>
+        <span class="shadow s1" aria-hidden="true"></span>
+        <span class="shadow s2" aria-hidden="true"></span>
+        <span class="shadow s3" aria-hidden="true"></span>
     </main>
-    <footer>
+
+    <footer class="demo-footer">
         <div class="credits">Made with chills and thrills. &copy; 2025</div>
-        <p class="catchy">"Enter, if you dare, the CSS spooktacular."</p>
     </footer>
 </body>
 

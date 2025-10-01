@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Strike — Spooktacular</title>
+    <meta http-equiv="refresh" content="1;url=index.html">
+    <link
+        href="https://fonts.googleapis.com/css2?family=UnifrakturCook&family=Creepster&family=Eater&family=Work+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="spooktacular.css">
+    <meta name="description" content="Lightning strike before entering the story.">
+    <style>
+        /* keep minimal inline to ensure quick paint */
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #060308, #10041a);
+            height: 100vh;
+            overflow: hidden
+        }
+    </style>
+</head>
+
+<body class="play-strike">
+    <!-- Play the strike animation, then meta-refresh will navigate to index.html -->
+    <main class="welcome-hero" role="main" aria-hidden="true">
+        <div class="welcome-inner">
+            <h1 class="welcome-title">Entering the Night...</h1>
+        </div>
+
+        <div class="welcome-decor">
+            <img class="bat" src="assets/images/bat.png" alt="bat" />
+            <img class="fog" src="assets/images/fog.png" alt="fog" />
+        </div>
+
+        <div class="strike-overlay"></div>
+        <span class="shadow s1"></span>
+        <span class="shadow s2"></span>
+        <span class="shadow s3"></span>
+    </main>
+</body>
+
+</html>
