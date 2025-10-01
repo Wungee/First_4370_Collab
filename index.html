@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Spooktacular — CSS Storybook</title>
+    <!-- Fonts loaded separately; styles live in spooktacular.css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Work+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="spooktacular.css">
+    <meta name="description"
+        content="A CSS-only animated Halloween storybook — 100% HTML & CSS interactivity, :target pages, :checked menu, and accessible focus states.">
+    <style>
+        /* Minimal inline fallback to ensure legibility if CSS fails */
+        :root {
+            color-scheme: dark;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <div class="logo" aria-hidden="false">
+                <a href="#page-1"><img src="assets/images/pumpkin.png" alt="Spooktacular logo - pumpkin" /></a>
+            </div>
+
+            <!-- Mobile menu toggle (CSS-only) -->
+            <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-label="Toggle navigation">
+            <label for="menu-toggle" class="menu-button" aria-hidden="true">☰</label>
+
+            <nav class="site-nav" role="navigation" aria-label="Primary">
+                <a class="nav-link" href="#page-1">Graveyard</a>
+                <a class="nav-link" href="#page-2">Haunted Library</a>
+                <a class="nav-link" href="#page-3">Pumpkin Patch</a>
+                <a class="nav-link" href="#credits">Credits</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="site-main">
+        <!-- Page 1: Big Splash / Intro -->
+        <section id="page-1" class="page default" aria-labelledby="p1-title">
+            <div class="hero">
+                <h1 id="p1-title" class="hero-title">Midnight in the Graveyard</h1>
+                <p class="lead">The moon hung heavy while whispering fog curled between ancient stones. Something
+                    stirs...</p>
+                <div class="hero-decor">
+                    <span class="moon" aria-hidden="true"></span>
+                    <span class="stars" aria-hidden="true"></span>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <article class="card ghost-card" tabindex="0">
+                    <img src="assets/images/ghost.png" alt="Friendly ghost" />
+                    <h3>Ghost</h3>
+                    <p class="sr-only">Hover or focus to make the ghost float and reveal its secret.</p>
+                    <div class="ghost-secret">Boo! It's just a friend.</div>
+                </article>
+
+                <article class="card vampire-card" tabindex="0">
+                    <div class="vampire-face" aria-hidden="true">&#x1F9DB;</div>
+                    <h3>Vampire</h3>
+                    <p>Watch its fangs appear when you hover or focus the card.</p>
+                </article>
+
+                <div class="navigation-cta">
+                    <a class="pager" href="#page-2">Next Chapter &raquo;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 2: Multi-panel Haunted Library -->
+        <section id="page-2" class="page" aria-labelledby="p2-title">
+            <h2 id="p2-title">Haunted Library</h2>
+            <div class="library-panels">
+                <aside class="panel shelf" tabindex="0">
+                    <h4>Shelf of Echoes</h4>
+                    <p>Books whisper when you lean in.</p>
+                </aside>
+                <article class="panel reading-nook" tabindex="0">
+                    <h4>Reading Nook</h4>
+                    <p>A witch reads by candlelight. See her broom fly on hover.</p>
+                    <div class="broom" aria-hidden="true"></div>
+                </article>
+                <article class="panel werewolf-panel" tabindex="0">
+                    <h4>Werewolf</h4>
+                    <div class="werewolf-face" aria-hidden="true">&#x1F43A;</div>
+                    <p>Focus or hover to watch the werewolf morph.</p>
+                </article>
+            </div>
+
+            <div class="navigation-cta">
+                <a class="pager" href="#page-3">Next Chapter &raquo;</a>
+            </div>
+        </section>
+
+        <!-- Page 3: Pumpkin Patch Finale -->
+        <section id="page-3" class="page" aria-labelledby="p3-title">
+            <h2 id="p3-title">Pumpkin Patch Finale</h2>
+            <div class="patch-grid">
+                <div class="pumpkin" tabindex="0">
+                    <img src="assets/images/pumpkin.png" alt="Glowing pumpkin" />
+                    <p>Light it to reveal a surprise.</p>
+                </div>
+                <div class="pumpkin" tabindex="0">
+                    <img src="assets/images/pumpkin.png" alt="Glowing pumpkin" />
+                    <p>Another pumpkin waits...</p>
+                </div>
+            </div>
+
+            <div class="navigation-cta">
+                <a class="pager" href="#page-1">&laquo; Back to Start</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="credits" class="site-footer" role="contentinfo">
+        <div class="credits">Made with chills and thrills. &copy; 2025</div>
+        <p class="catchy">"Enter, if you dare, the CSS spooktacular."</p>
+    </footer>
+
+</body>
+
+</html>
